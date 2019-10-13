@@ -107,21 +107,21 @@
 		index = 0;
 
 	(function init() {
-		var music9 = new Music("jingle bells","raw/jingle bells.mp3");
-		var music4 = new Music("遇见","raw/遇见.mp3");
-		var music5 = new Music("起风了","raw/起风了.mp3");
-		var music6 = new Music("美好事物","raw/美好事物.mp3");
-		var music7 = new Music("love is all around","raw/love is all around.mp3");
-		musicQueue.addMusic(music9);
+		var music1 = new Music("遇见","raw/遇见.mp3");
+		var music2 = new Music("jingle bells","raw/jingle bells.mp3");
+		var music3 = new Music("起风了","raw/起风了.mp3");
+		var music4 = new Music("美好事物","raw/美好事物.mp3");
+		var music5 = new Music("love is all around","raw/love is all around.mp3");
+		musicQueue.addMusic(music1);
+		musicQueue.addMusic(music2);
+		musicQueue.addMusic(music3);
 		musicQueue.addMusic(music4);
 		musicQueue.addMusic(music5);
-		musicQueue.addMusic(music6);
-		musicQueue.addMusic(music7);
 		musicTitleElement.innerHTML = music1.name;
 		player.src = music1.src;
 		setTimeout(setDuration, 500);
-		appendMusicToDOM("jingle bells");
 		appendMusicToDOM("遇见");
+		appendMusicToDOM("jingle bells");
 		appendMusicToDOM("起风了");
 		appendMusicToDOM("美好事物");
 		appendMusicToDOM("love is all around");
