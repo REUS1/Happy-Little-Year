@@ -107,30 +107,24 @@
 		index = 0;
 
 	(function init() {
-		var music1 = new Music("新年快乐", "raw/新年快乐.mp3");
 		var music9 = new Music("jingle bells","raw/jingle bells.mp3");
-		var music2 = new Music("新年再次快乐","raw/新年再次快乐.mp3");
 		var music4 = new Music("遇见","raw/遇见.mp3");
 		var music5 = new Music("起风了","raw/起风了.mp3");
 		var music6 = new Music("美好事物","raw/美好事物.mp3");
 		var music7 = new Music("love is all around","raw/love is all around.mp3");
-		musicQueue.addMusic(music1);
 		musicQueue.addMusic(music9);
 		musicQueue.addMusic(music4);
 		musicQueue.addMusic(music5);
 		musicQueue.addMusic(music6);
 		musicQueue.addMusic(music7);
-		musicQueue.addMusic(music2);
 		musicTitleElement.innerHTML = music1.name;
 		player.src = music1.src;
 		setTimeout(setDuration, 500);
-		appendMusicToDOM("新年快乐");
 		appendMusicToDOM("jingle bells");
 		appendMusicToDOM("遇见");
 		appendMusicToDOM("起风了");
 		appendMusicToDOM("美好事物");
 		appendMusicToDOM("love is all around");
-		appendMusicToDOM("新年再次快乐");
 		setSelected(index);
 	})();
 	/* end init view */
