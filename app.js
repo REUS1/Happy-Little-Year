@@ -324,7 +324,7 @@
 			src;	
 
 		num = (num > 0) ? num : num + 1;
-		src = "raw/" + "JQ" + ".jpg";
+		src = "raw/" + "xr" + ".jpg";
 		albumPicElment.src = src;
 	}
 
